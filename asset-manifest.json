@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ExpensesApp_ReactJS.git/static/css/main.fa3e86ea.css",
+    "main.js": "/ExpensesApp_ReactJS.git/static/js/main.79fc5367.js",
+    "static/js/787.cfd8f164.chunk.js": "/ExpensesApp_ReactJS.git/static/js/787.cfd8f164.chunk.js",
+    "index.html": "/ExpensesApp_ReactJS.git/index.html",
+    "main.fa3e86ea.css.map": "/ExpensesApp_ReactJS.git/static/css/main.fa3e86ea.css.map",
+    "main.79fc5367.js.map": "/ExpensesApp_ReactJS.git/static/js/main.79fc5367.js.map",
+    "787.cfd8f164.chunk.js.map": "/ExpensesApp_ReactJS.git/static/js/787.cfd8f164.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa3e86ea.css",
+    "static/js/main.79fc5367.js"
+  ]
+}
