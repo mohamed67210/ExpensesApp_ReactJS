@@ -4,6 +4,7 @@ const ExpenseForm = (props) => {
   const [entredTitle, setEntredTitle] = useState("");
   const [entredAmount, setEntredAmount] = useState("");
   const [entredDate, setEntredDate] = useState("");
+  const [isValid, setIsValid] = useState(true);
 
   const titleChangeHandler = (event) => {
     setEntredTitle(event.target.value);
@@ -17,6 +18,13 @@ const ExpenseForm = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault(); // en cliquant sur le bouton la page ne se recharge pas
+    if (
+      entredTitle.trim().length === 0 ||
+      entredAmount.trim().length === 0 ||
+      entredDate.trim().length === 0
+    ) {
+      return setIsValid(false);
+    }
     const ExpenseData = {
       title: entredTitle,
       amount: +entredAmount,
@@ -30,7 +38,7 @@ const ExpenseForm = (props) => {
   };
   return (
     <form onSubmit={submitHandler}>
-      <div className="new-expense__controls">
+      <div className={`new-expense__controls ${!isValid ? "invalid" : ""}`}>
         <div className="new-expense__control">
           <label>Title</label>
           <input
